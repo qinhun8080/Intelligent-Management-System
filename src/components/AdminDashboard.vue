@@ -516,7 +516,6 @@ const fetchDeviceData = async () => {
       const data = await response.json()
       liveDevice.status = data.deviceStatus === '在线' ? 'online' : 'offline'
 
-      // 注意：如果设备在线，温度湿度正常显示；
       // 如果你需要在线时也更新这个时间，可以在这里继续赋值，
       // 但根据你的需求“离线时间”，通常离线状态下这个字段才有意义。
       liveDevice.temperature = data.temp !== 'N/A' && data.temp !== 'ERR' ? `${data.temp}°C` : 'N/A'
