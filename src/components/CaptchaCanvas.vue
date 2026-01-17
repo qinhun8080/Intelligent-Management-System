@@ -1,12 +1,6 @@
 <template>
-  <canvas
-    ref="captchaCanvas"
-    width="100"
-    height="40"
-    @click="generateCaptcha"
-    title="点击换一张"
-    class="captcha-canvas"
-  ></canvas>
+  <canvas ref="captchaCanvas" width="100" height="40" @click="generateCaptcha" title="点击换一张"
+    class="captcha-canvas"></canvas>
 </template>
 
 <script setup>
